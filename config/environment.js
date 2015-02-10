@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'components-in-subdirs',
+    podModulePrefix: 'components-in-subdirs/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

@@ -1,3 +1,18 @@
 <h2 id="title">Welcome to Ember.js</h2>
 
-{{outlet}}
+<p>subdir/template-only:</p>
+
+{{subdir1/template-only random-string="something passed in the application.hbs"}}
+
+<hr>
+
+<p>subdir1/other-thing:</p>
+
+{{#subdir1/other-thing some-prop="on the component" as |other|}}
+  You passed `{{other.some-prop}}` to the <pre>subdir1/other-thing</pre> component.
+{{/subdir1/other-thing}}
+
+<hr>
+
+<p>common-thing/pod-based-thing:</p>
+{{common-thing/pod-based-thing random-string="some random thing to a pod-based component"}}
